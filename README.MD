@@ -3,7 +3,7 @@
 
 ## 1. Definición de la Aplicación
 
-**NoteUI** es una aplicación web desarrollada con HTML, CSS y JavaScript "puro", que permite a los usuarios registrarse e iniciar sesión utilizando un nombre de usuario y una contraseña. El objetivo es brindar una plataforma sencilla, visualmente amigable y abierta, para escribir, guardar y visualizar notas públicas.
+**NoteUI** es una aplicación web desarrollada con HTML, CSS y JavaScript "puro: guiño, guiño", que permite a los usuarios registrarse e iniciar sesión utilizando un nombre de usuario y una contraseña. El objetivo es brindar una plataforma sencilla, visualmente amigable y abierta, para escribir, guardar y visualizar notas públicas.
 
 Cada vez que un usuario inicia sesión, podrá ver todas las notas creadas por todos los usuarios del sistema. No existe privacidad entre cuentas, lo que convierte esta aplicación en una herramienta colaborativa o de consulta abierta. Todo el contenido se guarda localmente en el navegador utilizando `localStorage`.
 
@@ -58,7 +58,18 @@ Este proyecto tiene fines académicos y está pensado para aprender sobre manipu
 
 # 📅 Cronograma de Desarrollo – Proyecto NoteUI
 
-Este cronograma está diseñado para guiar el desarrollo de la aplicación **NoteUI** durante 6 o 7 sesiones de clase (una por semana), con una duración aproximada de **3 horas y media por jornada**. El proyecto está pensado para estudiantes que están iniciando su aprendizaje en JavaScript, por lo que cada sesión avanza de forma progresiva, integrando HTML, CSS y lógica básica con JavaScript.
+Este cronograma está diseñado para guiar el desarrollo de la aplicación **NoteUI** durante 6 o 7 sesiones de clase (una por semana), con una duración aproximada de **2 horas y media por jornada**. El proyecto está pensado para estudiantes que están iniciando su aprendizaje en JavaScript, por lo que cada sesión avanza de forma progresiva, integrando HTML, CSS y lógica básica con JavaScript.
+
+---
+
+
+## 🧠 Saberes previos
+
+- Conocimiento básico de HTML, CSS.
+- Logica básica de JavaScript (condicionales, bucles, funciones) 
+- Conocimiento básico de Git y GitHub.
+- Conocimiento básico de la estructura de carpetas y archivos.
+
 
 ---
 
