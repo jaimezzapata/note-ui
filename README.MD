@@ -52,7 +52,7 @@ Este proyecto tiene fines académicos y está pensado para aprender sobre manipu
 - **CSS3** – Para el diseño visual y experiencia del usuario.
 - **JavaScript (Vanilla JS)** – Para toda la lógica del proyecto: registro, login, visualización y manipulación de notas.
 - **localStorage** – Para guardar los usuarios y notas localmente sin conexión a un servidor.
-- **[Opcional] Google Fonts / Iconos** – Para mejorar la presentación visual.
+- **Google Fonts / Iconos** – Para mejorar la presentación visual.
 
 ---
 
