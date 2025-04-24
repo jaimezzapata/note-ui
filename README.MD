@@ -56,4 +56,63 @@ Este proyecto tiene fines académicos y está pensado para aprender sobre manipu
 
 ---
 
+# 📅 Cronograma de Desarrollo – Proyecto NoteUI
+
+Este cronograma está diseñado para guiar el desarrollo de la aplicación **NoteUI** durante 6 o 7 sesiones de clase (una por semana), con una duración aproximada de **3 horas y media por jornada**. El proyecto está pensado para estudiantes que están iniciando su aprendizaje en JavaScript, por lo que cada sesión avanza de forma progresiva, integrando HTML, CSS y lógica básica con JavaScript.
+
+---
+
+## 🧠 Objetivo General
+
+Desarrollar una aplicación web funcional en la que los usuarios puedan registrarse, iniciar sesión y visualizar todas las notas creadas por cualquier usuario. Todo esto utilizando únicamente HTML, CSS y JavaScript, y almacenando los datos localmente con `localStorage`.
+
+---
+
+## 📌 Cronograma por Semana
+
+### ✅ Semana 1: Introducción y estructura base
+- Presentación del proyecto NoteUI.
+- Definición de encarpetado y estructura del proyecto
+- Creación del archivo `index.html`, `style.css` y `main.js`.
+- Maquetación inicial: formularios de registro e inicio de sesión.
+- Introducción a `addEventListener`, `querySelector`, `value`.
+
+### ✅ Semana 2: Registro y login con localStorage
+- Guardar usuarios en `localStorage` (como objetos dentro de un arreglo).
+- Validación básica para evitar usuarios repetidos.
+- Lógica para verificar usuario y contraseña en el login.
+- Mostrar errores en pantalla si los datos no coinciden.
+
+### ✅ Semana 3: Crear nota y guardar en localStorage
+- Crear formulario para nuevas notas (título y contenido).
+- Asociar notas a un nombre de usuario.
+- Guardar las notas como arreglo de objetos dentro de `localStorage`.
+- Introducción al uso de `JSON.stringify` y `JSON.parse`.
+
+### ✅ Semana 4: Mostrar notas en pantalla
+- Leer todas las notas guardadas y mostrarlas en pantalla.
+- Crear tarjetas o bloques de notas con `innerHTML`.
+- Mostrar el nombre del autor en cada nota.
+- Introducción al renderizado dinámico del DOM.
+
+### ✅ Semana 5: Editar y eliminar notas
+- Añadir botones para editar y eliminar cada nota.
+- Detectar qué nota fue clickeada usando `data-id` o índices.
+- Actualizar o eliminar el objeto correspondiente del arreglo de notas.
+- Re-renderizar notas después de cada acción.
+
+### ✅ Semana 6: Estilización y mejoras visuales
+- Aplicar estilos con CSS: tipografía, colores, espaciados.
+- Uso opcional de iconos con Google Fonts o Font Awesome.
+- Crear una experiencia de usuario más intuitiva.
+- Ajustes visuales para mejorar la estructura general.
+
+### 🆓 Semana 7 (opcional): Repaso, mejoras y validaciones
+- Validar campos vacíos o inputs incorrectos.
+- Agregar funcionalidad de “cerrar sesión”.
+- Documentar el código con comentarios.
+- Resolver errores frecuentes y repasar conceptos clave.
+
+---
+
 > ⚠️ Nota: Este sistema es de uso educativo y no aplica medidas de seguridad como cifrado de contraseñas ni control de permisos. Las notas son públicas entre usuarios dentro del mismo navegador.
