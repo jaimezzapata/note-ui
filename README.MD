@@ -3,7 +3,7 @@
 
 ## 1. Definición de la Aplicación
 
-**NoteUI** es una aplicación web desarrollada con HTML, CSS y JavaScript puro, que permite a los usuarios registrarse e iniciar sesión utilizando un nombre de usuario y una contraseña. El objetivo es brindar una plataforma sencilla, visualmente amigable y abierta, para escribir, guardar y visualizar notas públicas.
+**NoteUI** es una aplicación web desarrollada con HTML, CSS y JavaScript "puro", que permite a los usuarios registrarse e iniciar sesión utilizando un nombre de usuario y una contraseña. El objetivo es brindar una plataforma sencilla, visualmente amigable y abierta, para escribir, guardar y visualizar notas públicas.
 
 Cada vez que un usuario inicia sesión, podrá ver todas las notas creadas por todos los usuarios del sistema. No existe privacidad entre cuentas, lo que convierte esta aplicación en una herramienta colaborativa o de consulta abierta. Todo el contenido se guarda localmente en el navegador utilizando `localStorage`.
 
