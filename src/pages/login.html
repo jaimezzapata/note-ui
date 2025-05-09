@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/login.css" />
     <!-- Ruta relativa -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Login</title>
   </head>
   <body>
-      <img class="logo" src="" alt="Logo" />
+    <img class="logo" src="" alt="Logo" />
     <form class="formulario" action="">
       <h1 id="titulo" class="titulo">Login</h1>
       <label class="label-correo" for="correo">Correo:</label>
       <input class="input-correo" id="correo" type="email" />
       <label class="label-contrasena" for="contrasena">Contraseña: </label>
       <input class="input-contrasena" id="contrasena" type="password" />
-      <button onclick="inicarSesion()" class="btnLogin" type="button">Iniciar Sesión</button>
+      <button id="button" onclick="iniciarSesion()" class="btnLogin" type="button">
+        Iniciar Sesión
+      </button>
     </form>
     <script src="../js/login.js"></script>
     <!-- Ruta Absoluta -->
