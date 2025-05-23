@@ -1,20 +1,5 @@
-import alertaRedireccion from "../utils/funciones";
-
-let usuarios = [
-  {
-    correo: "correo@correo.com",
-    contrasena: "123456",
-    nombre: "Jaime Zapata",
-    id: 1,
-  },
-  {
-    correo: "admin@correo.com",
-    contrasena: "123456",
-    nombre: "Alejandra Carmona",
-    id: 2,
-  },
-];
-
+import { alertaRedireccion, almacenarLocalStorage } from '../utils/funciones.js'
+almacenarLocalStorage()
 localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
 function buscarUsuario() {
@@ -35,5 +20,9 @@ function iniciarSesion() {
       1000,
       "success"
     );
+  } else {
+    alert("No existe")
   }
 }
+
+document.getElementById("button").addEventListener("click", iniciarSesion)

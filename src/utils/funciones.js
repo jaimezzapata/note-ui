@@ -1,4 +1,4 @@
-export default function alertaRedireccion(titulo, mensaje, tiempo, iconoz) {
+export function alertaRedireccion(titulo, mensaje, tiempo, icono) {
   let timerInterval;
   Swal.fire({
     title: titulo,
@@ -25,3 +25,25 @@ export default function alertaRedireccion(titulo, mensaje, tiempo, iconoz) {
   });
 }
 
+let usuarios = [
+  {
+    correo: "correo@correo.com",
+    contrasena: "123456",
+    nombre: "Jaime Zapata",
+    id: 1,
+  },
+  {
+    correo: "admin@correo.com",
+    contrasena: "123456",
+    nombre: "Alejandra Carmona",
+    id: 2,
+  },
+];
+
+export function almacenarLocalStorage() {
+  localStorage.setItem("usuarios", JSON.stringify(usuarios))
+}
+
+export function consultarLocalStorage() {
+  localStorage.getItem(JSON.parse())
+}
