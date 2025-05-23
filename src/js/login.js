@@ -1,6 +1,8 @@
-import { alertaRedireccion, almacenarLocalStorage } from '../utils/funciones.js'
-almacenarLocalStorage()
-localStorage.setItem("usuarios", JSON.stringify(usuarios));
+import { alertaRedireccion, consultarLocalStorage } from '../utils/funciones.js'
+consultarLocalStorage()
+
+let usuarios = JSON.parse(localStorage.getItem("usuarios"))
+console.log(usuarios);
 
 function buscarUsuario() {
   let correo = document.getElementById("correo").value;
@@ -8,7 +10,6 @@ function buscarUsuario() {
   let usuarioEncontrado = usuarios.find(
     (item) => correo == item.correo && contrasena == item.contrasena
   );
-
   return usuarioEncontrado;
 }
 

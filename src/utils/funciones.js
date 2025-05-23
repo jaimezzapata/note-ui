@@ -40,10 +40,6 @@ let usuarios = [
   },
 ];
 
-export function almacenarLocalStorage() {
-  localStorage.setItem("usuarios", JSON.stringify(usuarios))
-}
-
 export function consultarLocalStorage() {
-  localStorage.getItem(JSON.parse())
+  localStorage.setItem("usuarios", JSON.stringify(usuarios))
 }
