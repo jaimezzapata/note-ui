@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/notes.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Notes</title>
   </head>
 
@@ -16,24 +17,26 @@
     </header>
     <main class="main">
       <div class="form-container">
-        <form class="form">
+        <form id="formulario" class="form">
           <p class="form-title">Registrar Nota</p>
           <div class="input-container">
-            <input id="titulo" type="text" placeholder="Título" />
+            <input name="titulo" id="titulo" type="text" placeholder="Título" />
+          </div>
+          <div class="input-container">
+            <input name="fecha" id="fecha" type="date" placeholder="Fecha" />
           </div>
           <div class="input-container">
             <textarea
+              name="descripcion"
               id="descripcion"
               placeholder="Contenido de la nota"
               rows="4"
             ></textarea>
           </div>
-          <button id="btnAgregar" type="button" class="submit">Guardar</button>
+          <button id="btnAgregar" type="submit" class="submit">Guardar</button>
         </form>
       </div>
-      <section id="cards" class="cards">
-        
-      </section>
+      <section id="cards" class="cards"></section>
     </main>
     <script type="module" src="/src/js/notes.js"></script>
   </body>

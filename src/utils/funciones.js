@@ -41,5 +41,17 @@ let usuarios = [
 ];
 
 export function consultarLocalStorage() {
-  localStorage.setItem("usuarios", JSON.stringify(usuarios))
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+}
+
+export function guardarLocalStorage(llave, valor) {
+  localStorage.setItem(llave, JSON.stringify(valor));
+}
+
+export function alertGeneral(titulo, mensaje, icon) {
+  Swal.fire({
+    title: titulo,
+    text: mensaje,
+    icon: icon,
+  });
 }

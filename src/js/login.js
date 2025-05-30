@@ -1,6 +1,5 @@
 import { alertaRedireccion, consultarLocalStorage } from '../utils/funciones.js'
 consultarLocalStorage()
-
 let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 console.log(usuarios);
 
