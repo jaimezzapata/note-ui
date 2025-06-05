@@ -111,20 +111,77 @@ input {
   flex: 2;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: white;
-  border: 1px solid #e0e0e0;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 100, 0.08);
+  justify-content: flex-start;
 }
 
 .card {
-  border-radius: 8px;
-  padding: 1rem;
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  min-height: 150px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  height: 220px;
+  min-height: 220px;
+  max-height: 220px;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 16px rgba(60, 72, 100, 0.10), 0 1.5px 4px rgba(60, 72, 100, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.18s, box-shadow 0.18s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(60, 72, 100, 0.18), 0 2px 8px rgba(60, 72, 100, 0.08);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Sutil decoración de fondo para las tarjetas */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #a5b4fc 0%, #f8fafc 80%);
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
 }
 
 textarea {
