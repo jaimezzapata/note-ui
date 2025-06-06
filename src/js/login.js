@@ -1,6 +1,9 @@
-import { alertaRedireccion, consultarLocalStorage } from '../utils/funciones.js'
-consultarLocalStorage()
-let usuarios = JSON.parse(localStorage.getItem("usuarios"))
+import {
+  alertaRedireccion,
+  consultarLocalStorage,
+} from "../utils/funciones.js";
+consultarLocalStorage();
+let usuarios = JSON.parse(localStorage.getItem("usuarios"));
 console.log(usuarios);
 
 function buscarUsuario() {
@@ -14,6 +17,7 @@ function buscarUsuario() {
 
 function iniciarSesion() {
   if (buscarUsuario()) {
+    localStorage.setItem("usuario", JSON.stringify(buscarUsuario().nombre));
     alertaRedireccion(
       "Bienvenido",
       "Será redireccionado en unos segundos",
@@ -21,8 +25,8 @@ function iniciarSesion() {
       "success"
     );
   } else {
-    alert("No existe")
+    alert("No existe");
   }
 }
 
-document.getElementById("button").addEventListener("click", iniciarSesion)
+document.getElementById("button").addEventListener("click", iniciarSesion);

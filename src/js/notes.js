@@ -1,5 +1,6 @@
 import { guardarLocalStorage, alertGeneral } from "../utils/funciones.js";
-let notas = [];
+
+let notas = JSON.parse(localStorage.getItem("notas"));
 
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", (evtn) => {
@@ -25,7 +26,6 @@ formulario.addEventListener("submit", (evtn) => {
   //     descripcion,
   //     fecha,
   //   };
-
 });
 
 function mostrarNotas() {
@@ -37,11 +37,32 @@ function mostrarNotas() {
     let h2 = document.createElement("h2");
     let p1 = document.createElement("p");
     let p2 = document.createElement("p");
+    let p3 = document.createElement("p");
+    let btnEditar = document.createElement("button")
+    let btnEliminar = document.createElement("button")
+    let buttons = document.createElement("div");
     h2.textContent = nota.titulo;
     p1.textContent = "Fecha " + nota.fecha;
     p2.textContent = "Descripción " + nota.descripcion;
+    p3.textContent = "Autor " + JSON.parse(localStorage.getItem("usuario"));
+    btnEditar.textContent = "Editar"
+    btnEliminar.textContent = "Eliminar"
+    buttons.append(btnEditar, btnEliminar)
     div.classList.add("card");
-    div.append(h2, p1, p2);
+    div.append(h2, p1, p2, p3, buttons);
     listadoNotas.appendChild(div);
   });
 }
+
+window.addEventListener("DOMContentLoaded", function () {
+  let usuarioLogueado = JSON.parse(localStorage.getItem("usuario"));
+  document.getElementById("usuario").textContent = usuarioLogueado;
+
+  let bntCerrarSesion = document.getElementById("bntCerrarSesion");
+  bntCerrarSesion.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.location.href = "/src/pages/login.html";
+  });
+
+  mostrarNotas();
+});
